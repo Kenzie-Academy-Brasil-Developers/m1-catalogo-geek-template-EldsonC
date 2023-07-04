@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --sz-name-product: 20px;
+    --sz-value-product: 16px;
+    --sz-title-section: 20px;
+    --sz-text-buttons: 20px;
+}
+
+body, html {
+    font-family: "Roboto", sans-serif !important;
+}
+
+header {
+    padding: 10px 30px;
+    width: calc(100vw - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
+}
+
+header > .buttons {
+    display: flex;
+    gap: 5px;
+
+    list-style: none;
+}
+
+.buttons > button {
+    width: 150px;
+    height: 40px;
+
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    font-size: var(--sz-text-buttons);
+    background-color: hsla(205, 99%, 52%, 0.103);
+    color: #0A99FE;
+
+    cursor: pointer;
+}
+
+.buttons > button:hover {
+    background-color: #0A99FE;
+    color: white;
+}
+
+main {
+    padding: 30px;
+}
+section {
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+section > h2 {
+    margin-bottom: 30px;
+    font-size: var(--sz-title-section);
+    
+}
+ul {
+    padding: 10px 0px;
+    display: flex;
+    gap: 15px;
+}
+.card {
+    min-width: 207px;
+    min-height: 275px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    background: #EDECEC;
+}
+
+.card > img {
+    width: 100%;
+    height: 50%;
+
+    border-radius: 5px 5px 0px 0px;
+
+    object-fit: cover;
+}
+
+.card > .data-card {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.data-card > h3 {
+    font-size: var(--sz-name-product);
+}
+.data-card > p {
+    font-size: var(--sz-value-product);
+    color: #868383;
+}
