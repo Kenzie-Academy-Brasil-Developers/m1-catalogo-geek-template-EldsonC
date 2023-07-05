@@ -71,12 +71,15 @@ ul {
     gap: 15px;
 }
 .card {
+    width: 207px;
+    height: 275px;
+
     min-width: 207px;
-    min-height: 275px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     border-radius: 5px;
     background: #EDECEC;
@@ -87,8 +90,6 @@ ul {
     height: 50%;
 
     border-radius: 5px 5px 0px 0px;
-
-    object-fit: cover;
 }
 
 .card > .data-card {
@@ -104,6 +105,7 @@ ul {
 }
 
 .data-card > h3 {
+    font-weight: normal;
     font-size: var(--sz-name-product);
 }
 .data-card > p {
